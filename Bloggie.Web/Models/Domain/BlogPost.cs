@@ -1,6 +1,6 @@
 ﻿namespace Bloggie.Web.Models.Domain
 {
-    public class BlogPostcs
+    public class BlogPost
     {
         public int MyProperty { get; set; }
         public string Heading { get; set; }
@@ -12,5 +12,6 @@
         public DateTime PublishedDate { get; set; }
         public string Author { get; set; }
         public bool Visible { get; set; }
+        public ICollection<Tag> Tags { get; set; }
     }
 }
